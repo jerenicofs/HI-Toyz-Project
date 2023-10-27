@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<!-- Navbar Header -->
+<nav class="navbar">
+    <a href="home2.html" class="navbar-logo">
+      <img src="Picture/logo.jpg" alt="Logo" id="logo" />
+      <span id="H">H</span>
+      <span id="I">I -</span>
+      <span id="T">T</span>
+      <span id="O">o</span>
+      <span id="YZ">y z</span>
+    </a>
+
+    <div class="navbar-nav">
+      <a href="home2.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="register.html">Sign Up</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+
+  <section class="container">
+   
+        <h1>Sign Up</h1>
+        <!-- error message -->
+        <p id="err">Error Message</p>
+
+        <!-- form -->
+        <div class="form">
+          
+            <form action="">
+               
+                <div class="input-form">
+                    <div class="input-label">
+                        <!-- label -> sebagai penanda input -->
+                        <label for="name"></label>
+                    </div>
+                    <div class="input">
+                        <!-- text field (input) -->
+                        <!-- biasanya tag name akan kepake kalau suddah ada backend, bakal kasih tau input ini berasal dari text field yang mana -->
+                        <input type="text" name="name" placeholder="Input your name" id="name">
+                    </div>
+                </div>
+
+                <!-- email input form -->
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="email">Email must consists of “@gmail.com”</label>
+                    </div>
+                    <div class="input">
+                        <!-- type email -> dari html nya bisa langsung validasi apakah emailnya valid/tidak -->
+                        <!-- required dari html untuk masing - masing tipe input -->
+                        <input type="text" name="email" placeholder="Input your email" id="email">
+                    </div>
+                </div>
+                
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="password"></label>
+                    </div>
+                    <div class="input-pas">
+                        <!-- type email -> dari html nya bisa langsung validasi apakah emailnya valid/tidak -->
+                        <!-- required dari html untuk masing - masing tipe input -->
+                        <input type="password" name="password" placeholder="Input your password" id="password">
+                    </div>
+                </div>
+
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="email"></label>
+                    </div>
+                    <div class="input-dob">
+                        <!-- type email -> dari html nya bisa langsung validasi apakah emailnya valid/tidak -->
+                        <!-- required dari html untuk masing - masing tipe input -->
+                        <input type="date" name="dob" placeholder="Input your DOB" id="dob">
+                    </div>
+                </div>
+
+                <!-- gender input form (radio button)-->
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="input">
+                        <!-- supaya bisa diselect salah satu saja, radip buttonnya harus disamakan namenya -->
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                </div>
+
+                <!-- major input form -->
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="major">Favourite Toy</label>
+                    </div>
+                    <div class="input">
+          
+                        <select name="major" id="major">
+            
+                            <option value="default">Select a toy</option>
+                            <option value="Electronic Toys">Electronic Toys</option>
+                            <option value="Traditional Toys">Traditional Toys</option>
+                            <option value="Board Game">Board Game</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- inc input form (checkbox) -->
+                <div class="input-form">
+                    <div class="input-label">
+                        <label for="tnc">Terms and Condition</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="tnc" id="tnc">I accept the Terms of Service
+                    </div>
+                </div>
+                
+                <!-- button untuk submit form    -->
+                <div class="input-form">
+                    <div class="input" id="btn">
+                        <button type="button" onclick="submitForm()" id="but">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+
+  <footer class="footer">
+    <div class="col">
+      <h2>HI-Toyz Company</h2>
+      <h3>Where imagination come to life</h3>
+    </div>
+
+    <div class="col">
+      <span>ABOUT US</span>
+      <span>CONTACT US</span>
+      <span>AFFILIATE</span>
+      <span>RESOURCES</span>
+    </div>
+
+    <div class="col">
+      <span>F.A.Q</span>
+      <span>COOKIE POLICY</span>
+      <span>FOLLOW US</span>
+      <div class="follow">
+        <i data-feather="twitter"></i>
+        <i data-feather="linkedin"></i>
+        <i data-feather="facebook"></i>
+        <i data-feather="instagram"></i>
+      </div>
+    </div>
+
+    <div class="copyright">&copy;Copyright. All rights reserved.</div>
+  </footer>
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- Javascript -->
+  <script src="main.js"></script>
+        
+    <script src="main.js"></script>
+</body>
+</html>
